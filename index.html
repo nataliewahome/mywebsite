@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tag -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- SEO -->
+    <meta name="description" content="Natalie Wahome, Software/DevOps Engineer specializing in Cloud Computing and Kubernetes. Building scalable infrastructure solutions and contributing to open source DevOps projects.">
+    <meta name="author" content="Natalie Wahome">
+    <meta name="url" content="https://nataliewahome.github.io">
+    <meta name="copyright" content="Natalie Wahome">
+    <meta name="robots" content="index,follow">
+    <title>Natalie Wahome ~ Software/DevOps Engineer | Cloud & Kubernetes</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon/fav.png">
+    <link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="images/favicon/apple-touch-icon.png" />
+    <!-- All CSS Plugins -->
+    <link rel="stylesheet" type="text/css" href="css/plugin.css" />
+    <!-- Main CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- New Layout Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="css/modern-theme.css" />
+    <!-- Matrix Canvas Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/matrix.css" />
+    <!-- Google Web Fonts  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Poppins:wght@300;400;500;600;700;800&display=swap">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description"
+        content='Natalie Wahome is a Software/DevOps Engineer specializing in Cloud Computing and Kubernetes. Building scalable infrastructure solutions and contributing to open source DevOps projects.'>
+    <meta name="twitter:card" content='images/favicon/fav.png'>
+    <meta name="twitter:site" content="https://github.com/nataliewahome">
+    <meta name="twitter:title" content="Natalie Wahome - Software/DevOps Engineer | Cloud & Kubernetes">
+    <meta name="twitter:description"
+        content='Software/DevOps Engineer specializing in Kubernetes, Docker, Helm, CI/CD, and Cloud Infrastructure. Active open source contributor.'>
+    <meta name="twitter:creator" content="https://github.com/nataliewahome">
+    <meta name="twitter:image" content="images/favicon/fav.png">
+    <meta name="twitter:domain" content="https://github.com/nataliewahome">
+    <meta name="keywords"
+        content="Natalie Wahome, Software Engineer, DevOps Engineer, Kubernetes, Docker, Helm, AWS, Azure, GCP, CI/CD, Terraform, Ansible, Open Source">
+</head>
+
+<body onload="initializeProfile();">
+    <!--Matrix Canvas Background-->
+    <canvas id="c" class="matrix"></canvas>
+
+    <!-- Main Wrapper -->
+    <div class="page-wrapper">
+        <!-- Top Navigation/Header -->
+        <div class="top-nav">
+            <div class="nav-content">
+                <div class="nav-info">
+                    <h1 class="nav-name" id="profile-name">Natalie Wahome</h1>
+                    <p class="nav-role" id="profile-title">Software/DevOps Engineer</p>
+                </div>
+                <div class="nav-social" id="social-links">
+                    <a href="#" target="_blank" class="nav-link github" id="github-link" style="display: none;" title="GitHub">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="#" target="_blank" class="nav-link linkedin" id="linkedin-link" style="display: none;" title="LinkedIn">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="#" target="_blank" class="nav-link medium" id="medium-link" style="display: none;" title="Medium">
+                        <i class="fa fa-medium"></i>
+                    </a>
+                    <a href="#" target="_blank" class="nav-link twitter" id="twitter-link" style="display: none;" title="Twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" class="nav-link email" id="email-link" style="display: none;" title="Email">
+                        <i class="fa fa-envelope-o"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content-area">
+            <!-- Left Sidebar -->
+            <aside class="left-sidebar">
+                <!-- Education -->
+                <div class="sidebar-card">
+                    <div class="card-title-bar">
+                        <i class="fa fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                    </div>
+                    <div class="card-details">
+                        <p class="detail-status" id="education-status">Professional</p>
+                        <p class="detail-main" id="education-institution">Software/DevOps Engineering</p>
+                        <p class="detail-sub" id="education-degree">Software/DevOps Engineering</p>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="sidebar-card" id="experience-section" style="display: none;">
+                    <div class="card-title-bar">
+                        <i class="fa fa-briefcase"></i>
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="card-details">
+                        <p class="exp-value" id="experience-display"></p>
+                        <p class="exp-label">Years in DevOps</p>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="main-area">
+                <!-- Skills Section -->
+                <section class="main-card skills-card">
+                    <div class="card-title-section">
+                        <i class="fa fa-cogs"></i>
+                        <h2>Skills & Technologies</h2>
+                    </div>
+                    <div class="card-body-section">
+                        <div class="skills-container" id="skills-container">
+                            <!-- Skills will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Open Source Section -->
+                <section class="main-card opensource-card" id="opensource-section" style="display: none;">
+                    <div class="card-title-section">
+                        <i class="fa fa-github-alt"></i>
+                        <h2>Open Source Contributions</h2>
+                    </div>
+                    <div class="card-body-section">
+                        <p class="card-description" id="opensource-description"></p>
+                        <div class="projects-container" id="projects-container">
+                            <!-- Projects will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Interests Section -->
+                <section class="main-card interests-card">
+                    <div class="card-title-section">
+                        <i class="fa fa-heart"></i>
+                        <h2>Interests</h2>
+                    </div>
+                    <div class="card-body-section">
+                        <div class="interests-container" id="interests-container">
+                            <!-- Interests will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- All Javascript Plugins  -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugin.js"></script>
+    <!-- Profile Configuration -->
+    <script type="text/javascript" src="js/config.js"></script>
+    <!-- Main Javascript File  -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+
+</html>
